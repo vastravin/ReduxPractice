@@ -11,51 +11,19 @@ type ComponentProps = {
   setModalState: React.Dispatch<SetStateAction<ProductImageModalState>>;
 };
 
-const ModalElement: React.FC<Props> = ({ modalState, setModalState }) => {
-  useEffect(() => {
-    return () => {
-      let modalNode: HTMLElement | null = document.getElementById(
-        "product-modal"
-      );
-
-      if (modalNode) {
-        document.removeChild(modalNode);
-      }
-    };
-  });
+const ProductImageModal: React.FC<Props> = ({ modalState, setModalState }) => {
   return (
     <Modal
       show={modalState.isShown}
+      centered={true}
+      size="lg"
       onHide={() => setModalState({ isShown: false, imageRef: "" })}
     >
       <Modal.Body>
-        <Image src={modalState.imageRef} />
+        <Image src={modalState.imageRef} fluid />
       </Modal.Body>
     </Modal>
   );
-};
-
-const ProductImageModal: React.FC<Props> = ({ modalState, setModalState }) => {
-  useEffect(() => {
-    let modalNode: HTMLElement | null = document.getElementById(
-      "product-modal"
-    );
-
-    if (!modalNode) {
-      modalNode = document.createElement("div");
-
-      modalNode.setAttribute("id", "product-modal");
-
-      document.appendChild(modalNode);
-
-      const element = (
-        <ModalElement modalState={modalState} setModalState={setModalState} />
-      );
-
-      ReactDOM.render(element, modalNode);
-    }
-  }, [modalState]);
-  return null;
 };
 
 export default ProductImageModal;
