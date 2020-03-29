@@ -2,25 +2,29 @@ import React from "react";
 import { connect } from "react-redux";
 import { User } from "../types/user/user";
 import { AppState } from "../store/store";
-import { HOME_PAGE_URL, LOGIN_PAGE_URL } from "../constants";
-import { Switch, Route } from "react-router";
-import { Redirect } from "react-router-dom";
-import HomePage from "../components/homePage/homePage";
+import { Redirect, Route } from "react-router";
+import { LOGIN_PAGE_URL } from "../constants";
 
-type Props = LinkStateProps;
+type Props = LinkStateProps & ComponentProps;
 
-const privateRoute: React.ReactElement = (
-  <Switch>
-    <Route exactPath={HOME_PAGE_URL} component={HomePage} />
-  </Switch>
-);
+type ComponentProps = {
+  component: React.FC;
+  user: User | null;
 
-const PrivateRouter: React.FC<Props> = ({ user }) => {
-  if (!user) {
-    return <Redirect to={LOGIN_PAGE_URL} />;
-  }
+  //rest parameters
+  [x: string]: any;
+};
 
-  return privateRoute;
+const PrivateRouter: React.FC<Props> = ({
+  component: Component,
+  user,
+  ...rest
+}) => {
+  const render = (): React.ReactElement => {
+    return user ? <Component /> : <Redirect to={LOGIN_PAGE_URL} />;
+  };
+
+  return <Route {...rest} render={render} />;
 };
 
 type LinkStateProps = {

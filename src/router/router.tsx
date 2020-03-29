@@ -1,13 +1,28 @@
 import React from "react";
-import PublicRouter from "./publicRouter";
 import PrivateRouter from "./privateRouter";
+import { Route, Switch } from "react-router";
+import {
+  LOGIN_PAGE_URL,
+  HOME_PAGE_URL,
+  USER_DETAILS_URL,
+  CATEGORY_LINK_PREFIX
+} from "../constants";
+import LoginPage from "../components/loginPage/loginPage";
+import HomePage from "../components/homePage/homePage";
+import UserDetails from "../components/userDetails/userDetails";
 
 const AppRouter: React.FC = () => {
   return (
-    <>
-      <PublicRouter />
-      <PrivateRouter />
-    </>
+    <Switch>
+      <Route exact path={LOGIN_PAGE_URL} component={LoginPage} />{" "}
+      <Route exact path={HOME_PAGE_URL} component={HomePage} />
+      <Route
+        exact
+        path={HOME_PAGE_URL + CATEGORY_LINK_PREFIX + ":id"}
+        component={HomePage}
+      />
+      <PrivateRouter exact path={USER_DETAILS_URL} component={UserDetails} />
+    </Switch>
   );
 };
 

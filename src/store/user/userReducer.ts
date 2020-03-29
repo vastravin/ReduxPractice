@@ -1,7 +1,7 @@
 import { User } from "../../types/user/user";
 import {
   UserActions,
-  USER_START_LOADING,
+  USER_START_LOGIN,
   USER_SUCCESS_LOGIN,
   USER_FAILED_LOGIN,
   USER_LOGGED_OUT
@@ -11,12 +11,14 @@ export type UserState = {
   user: User | null;
   isLoading: boolean;
   authRequestWasSent: boolean;
+  loginErrorMessage: string;
 };
 
 const userInitialState: UserState = {
   user: null,
   isLoading: false,
-  authRequestWasSent: false
+  authRequestWasSent: false,
+  loginErrorMessage: ""
 };
 
 export const userReducer = (
@@ -24,7 +26,7 @@ export const userReducer = (
   action: UserActions
 ): UserState => {
   switch (action.type) {
-    case USER_START_LOADING:
+    case USER_START_LOGIN:
       return {
         ...state,
         isLoading: true
@@ -34,23 +36,20 @@ export const userReducer = (
         ...state,
         isLoading: false,
         authRequestWasSent: true,
-        user: action.user
+        user: action.user,
+        loginErrorMessage: ""
       };
     }
     case USER_FAILED_LOGIN: {
       return {
         ...state,
         isLoading: false,
-        authRequestWasSent: true
+        authRequestWasSent: true,
+        loginErrorMessage: action.errorMessage
       };
     }
     case USER_LOGGED_OUT: {
-      return {
-        ...state,
-        isLoading: false,
-        authRequestWasSent: false,
-        user: null
-      };
+      return userInitialState;
     }
     default:
       return state;

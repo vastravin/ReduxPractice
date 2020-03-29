@@ -1,0 +1,26 @@
+[
+  {
+    "categoryId": "1",
+    "categoryName": "Furniture",
+    "products": [
+      {
+        "id": "1",
+        "imageRef": "https://img1.cgtrader.com/items/1843953/81e0c8f6e8/medieval-table-chair-and-bench-set-3d-model-obj-mtl-3ds-fbx-c4d-mat.jpg",
+        "productSubCategory": "Table",
+        "property": "Wood",
+        "productName": "Medieval Table",
+        "price": 192.4,
+        "creationDate": "~1400 AC"
+      },
+      {
+        "id": "2",
+        "imageRef": "https://img-new.cgtrader.com/items/1917069/5c0c671350/medieval-chair-3d-model-low-poly-obj-mtl-fbx-unitypackage-prefab-spp-sbsar.jpg",
+        "productSubCategory": "Chair",
+        "property": "Wood",
+        "productName": "Medieval Chair",
+        "price": 100.2,
+        "creationDate": "~1300 AC"
+      }
+    ]
+  }
+]

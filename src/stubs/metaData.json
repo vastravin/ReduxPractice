@@ -1,0 +1,22 @@
+{
+  "productCategories": [
+    {
+      "id": "1",
+      "category": "Furniture"
+    },
+    {
+      "id": "2",
+      "category": "Electronics"
+    },
+    {
+      "id": "3",
+      "category": "Tableware"
+    }
+  ],
+  "productSubCategories": [
+    {
+      "categoryId": "1",
+      "subCategories": ["Table", "Chair"]
+    }
+  ]
+}
