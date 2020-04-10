@@ -9,19 +9,19 @@ import {
 } from "../constants";
 import LoginPage from "../components/loginPage/loginPage";
 import HomePage from "../components/homePage/homePage";
-import UserDetails from "../components/userDetails/userDetails";
+import Cart from "../components/cart/cart";
 
 const AppRouter: React.FC = () => {
   return (
     <Switch>
-      <Route exact path={LOGIN_PAGE_URL} component={LoginPage} />{" "}
+      <Route exact path={LOGIN_PAGE_URL} component={LoginPage} />
       <Route exact path={HOME_PAGE_URL} component={HomePage} />
       <Route
         exact
         path={HOME_PAGE_URL + CATEGORY_LINK_PREFIX + ":id"}
         component={HomePage}
       />
-      <PrivateRouter exact path={USER_DETAILS_URL} component={UserDetails} />
+      <PrivateRouter exact path={USER_DETAILS_URL} component={Cart} />
     </Switch>
   );
 };

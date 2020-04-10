@@ -3,9 +3,12 @@ import { IUserService } from "./services/userService/IUserService";
 import {
   USER_SERVICE_NAME,
   META_DATA_SERVICE_NAME,
-  PRODUCT_SERVICE_NAME
+  PRODUCT_SERVICE_NAME,
 } from "./constants";
-import { StubUserService } from "./services/userService/StubUserService";
+import {
+  StubUserService,
+  AnotherStubUserService,
+} from "./services/userService/StubUserService";
 import { IMetaDataService } from "./services/metaDataService/IMetaDataService";
 import { StubMetaDataService } from "./services/metaDataService/StubMetaDataService";
 import { IProductService } from "./services/productService/IProductService";
@@ -18,3 +21,4 @@ container
   .bind<IMetaDataService>(META_DATA_SERVICE_NAME)
   .to(StubMetaDataService);
 container.bind<IProductService>(PRODUCT_SERVICE_NAME).to(StubProductService);
+container.bind<IUserService>("another").to(AnotherStubUserService);

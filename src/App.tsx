@@ -5,7 +5,7 @@ import Menu from "./components/menu/menu";
 import { ThunkDispatch } from "redux-thunk";
 import { AppActions } from "./types/actions/appActions";
 import { bindActionCreators } from "redux";
-import { getMetaData } from "./store/metaData/metaDataThunks";
+import { getMetaData } from "./thunks/metaDataThunks";
 import { IMetaDataService } from "./services/metaDataService/IMetaDataService";
 import { connect } from "react-redux";
 import { useInjection } from "./ioc.react";

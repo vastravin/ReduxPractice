@@ -1,6 +1,5 @@
-import React, { SetStateAction, useEffect } from "react";
+import React, { SetStateAction } from "react";
 import { Modal, Image } from "react-bootstrap";
-import ReactDOM from "react-dom";
 
 type Props = ComponentProps;
 

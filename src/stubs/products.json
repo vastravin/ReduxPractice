@@ -10,6 +10,8 @@
         "property": "Wood",
         "productName": "Medieval Table",
         "price": 192.4,
+        "currency": "$",
+        "available": true,
         "creationDate": "~1400 AC"
       },
       {
@@ -19,7 +21,158 @@
         "property": "Wood",
         "productName": "Medieval Chair",
         "price": 100.2,
+        "currency": "$",
+        "available": true,
         "creationDate": "~1300 AC"
+      },
+      {
+        "id": "3",
+        "imageRef": "https://img-new.cgtrader.com/items/1917069/5c0c671350/medieval-chair-3d-model-low-poly-obj-mtl-fbx-unitypackage-prefab-spp-sbsar.jpg",
+        "productSubCategory": "Chair",
+        "property": "Wood",
+        "productName": "Medieval Chair",
+        "price": 100.2,
+        "currency": "$",
+        "available": true,
+        "creationDate": "~1300 AC"
+      },
+      {
+        "id": "4",
+        "imageRef": "https://img-new.cgtrader.com/items/1917069/5c0c671350/medieval-chair-3d-model-low-poly-obj-mtl-fbx-unitypackage-prefab-spp-sbsar.jpg",
+        "productSubCategory": "Chair",
+        "property": "Wood",
+        "productName": "Medieval Chair",
+        "price": 100.2,
+        "currency": "$",
+        "available": true,
+        "creationDate": "~1300 AC"
+      },
+      {
+        "id": "5",
+        "imageRef": "https://img-new.cgtrader.com/items/1917069/5c0c671350/medieval-chair-3d-model-low-poly-obj-mtl-fbx-unitypackage-prefab-spp-sbsar.jpg",
+        "productSubCategory": "Chair",
+        "property": "Wood",
+        "productName": "Medieval Chair",
+        "price": 100.2,
+        "available": false,
+        "currency": "$",
+        "creationDate": "~1300 AC"
+      },
+      {
+        "id": "6",
+        "imageRef": "https://img-new.cgtrader.com/items/1917069/5c0c671350/medieval-chair-3d-model-low-poly-obj-mtl-fbx-unitypackage-prefab-spp-sbsar.jpg",
+        "productSubCategory": "Chair",
+        "property": "Wood",
+        "productName": "Medieval Chair",
+        "price": 100.2,
+        "available": false,
+        "currency": "$",
+        "creationDate": "~1300 AC"
+      },
+      {
+        "id": "7",
+        "imageRef": "https://img-new.cgtrader.com/items/1917069/5c0c671350/medieval-chair-3d-model-low-poly-obj-mtl-fbx-unitypackage-prefab-spp-sbsar.jpg",
+        "productSubCategory": "Chair",
+        "property": "Wood",
+        "productName": "Medieval Chair",
+        "price": 100.2,
+        "available": true,
+        "currency": "$",
+        "creationDate": "~1300 AC"
+      },
+      {
+        "id": "8",
+        "imageRef": "https://img1.cgtrader.com/items/1843953/81e0c8f6e8/medieval-table-chair-and-bench-set-3d-model-obj-mtl-3ds-fbx-c4d-mat.jpg",
+        "productSubCategory": "Table",
+        "property": "Wood",
+        "productName": "Medieval Table",
+        "price": 192.4,
+        "available": false,
+        "currency": "$",
+        "creationDate": "~1400 AC"
+      },
+      {
+        "id": "9",
+        "imageRef": "https://img1.cgtrader.com/items/1843953/81e0c8f6e8/medieval-table-chair-and-bench-set-3d-model-obj-mtl-3ds-fbx-c4d-mat.jpg",
+        "productSubCategory": "Table",
+        "property": "Wood",
+        "productName": "Medieval Table",
+        "price": 192.4,
+        "available": true,
+        "currency": "$",
+        "creationDate": "~1400 AC"
+      },
+      {
+        "id": "10",
+        "imageRef": "https://img1.cgtrader.com/items/1843953/81e0c8f6e8/medieval-table-chair-and-bench-set-3d-model-obj-mtl-3ds-fbx-c4d-mat.jpg",
+        "productSubCategory": "Table",
+        "property": "Wood",
+        "productName": "Medieval Table",
+        "price": 192.4,
+        "available": false,
+        "currency": "$",
+        "creationDate": "~1400 AC"
+      },
+      {
+        "id": "11",
+        "imageRef": "https://img1.cgtrader.com/items/1843953/81e0c8f6e8/medieval-table-chair-and-bench-set-3d-model-obj-mtl-3ds-fbx-c4d-mat.jpg",
+        "productSubCategory": "Table",
+        "property": "Wood",
+        "productName": "Medieval Table",
+        "price": 192.4,
+        "available": true,
+        "currency": "$",
+        "creationDate": "~1400 AC"
+      },
+      {
+        "id": "12",
+        "imageRef": "https://img1.cgtrader.com/items/1843953/81e0c8f6e8/medieval-table-chair-and-bench-set-3d-model-obj-mtl-3ds-fbx-c4d-mat.jpg",
+        "productSubCategory": "Table",
+        "property": "Wood",
+        "productName": "Medieval Table",
+        "price": 192.4,
+        "available": true,
+        "currency": "$",
+        "creationDate": "~1400 AC"
+      }
+    ]
+  },
+  {
+    "categoryId": "2",
+    "categoryName": "Electronics",
+    "products": [
+      {
+        "id": "1",
+        "imageRef": "http://t0.gstatic.com/images?q=tbn:ANd9GcS6Jw1GTi9vacVc7mCC_BCbKi0v307n_3ZFb4eiLgOs7lyLGoHP4SSRhfVgFahUmoYK6R5eJeJYFIi5-nfP4EE",
+        "productSubCategory": "Kettle",
+        "property": "Metal",
+        "productName": "Modern Kettle",
+        "price": 34,
+        "currency": "$",
+        "available": true,
+        "creationDate": "2020"
+      },
+      {
+        "id": "2",
+        "imageRef": "http://t0.gstatic.com/images?q=tbn:ANd9GcS6Jw1GTi9vacVc7mCC_BCbKi0v307n_3ZFb4eiLgOs7lyLGoHP4SSRhfVgFahUmoYK6R5eJeJYFIi5-nfP4EE",
+        "productSubCategory": "Kettle",
+        "property": "Metal",
+        "productName": "Modern Kettle",
+        "price": 34,
+        "currency": "$",
+        "available": false,
+        "creationDate": "2020"
+      },
+      {
+        "id": "3",
+        "imageRef": "http://t0.gstatic.com/images?q=tbn:ANd9GcS6Jw1GTi9vacVc7mCC_BCbKi0v307n_3ZFb4eiLgOs7lyLGoHP4SSRhfVgFahUmoYK6R5eJeJYFIi5-nfP4EE",
+        "productSubCategory": "Kettle",
+        "property": "Metal",
+        "productName": "Modern Kettle",
+        "price": 34,
+        "currency": "$",
+        "available": true,
+        "creationDate": "2020"
       }
     ]
   }

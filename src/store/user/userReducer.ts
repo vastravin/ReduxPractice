@@ -15,7 +15,15 @@ export type UserState = {
 };
 
 const userInitialState: UserState = {
-  user: null,
+  user: {
+    id: "1",
+    userName: "Rikatto",
+    profile: {
+      name: "Vasyl Travin",
+      birthDate: "23/10/1992"
+    },
+    cart: []
+  },
   isLoading: false,
   authRequestWasSent: false,
   loginErrorMessage: ""
@@ -49,7 +57,7 @@ export const userReducer = (
       };
     }
     case USER_LOGGED_OUT: {
-      return userInitialState;
+      return { ...state, user: null };
     }
     default:
       return state;

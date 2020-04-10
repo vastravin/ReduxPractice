@@ -20,6 +20,7 @@
     "bootstrap": "^4.4.1",
     "bootstrap-4": "^4.0.0",
     "connected-react-router": "^6.8.0",
+    "edit-json-file": "^1.4.0",
     "formik": "^2.1.4",
     "history": "^4.10.1",
     "inversify": "^5.0.1",
@@ -35,6 +36,7 @@
     "redux-thunk": "^2.3.0",
     "reflect-metadata": "^0.1.13",
     "typescript": "^3.8.3",
+    "write-json-file": "^4.3.0",
     "yup": "^0.28.3"
   },
   "scripts": {

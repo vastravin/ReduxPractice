@@ -8,7 +8,7 @@ import { injectable } from "inversify";
 export class StubUserService implements IUserService {
   async login(userLoginForm: UserLoginForm): Promise<User | null> {
     const user: User | undefined = users.find(
-      u =>
+      (u) =>
         u.userName === userLoginForm.userName &&
         u.password === userLoginForm.password
     );
@@ -22,6 +22,21 @@ export class StubUserService implements IUserService {
 
   async logout(): Promise<null> {
     window.console.log("User logged out");
+
+    return null;
+  }
+}
+
+@injectable()
+export class AnotherStubUserService implements IUserService {
+  async login(userLoginForm: UserLoginForm): Promise<User | null> {
+    window.alert("another login");
+
+    return null;
+  }
+
+  async logout(): Promise<null> {
+    window.console.log("another logout");
 
     return null;
   }

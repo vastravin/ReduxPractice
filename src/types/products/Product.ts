@@ -5,5 +5,7 @@ export type Product = {
   property: string;
   productName: string;
   price: number;
+  currency: string;
+  available: boolean;
   creationDate: string;
 };

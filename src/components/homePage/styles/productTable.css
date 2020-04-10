@@ -1,0 +1,9 @@
+.product-card {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .product-card {
+    width: 25%;
+  }
+}

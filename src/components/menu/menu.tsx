@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Form, Button, Nav } from "react-bootstrap";
+import { Navbar, Form, Button, Nav, Image } from "react-bootstrap";
 import {
   HOME_PAGE_URL,
   LOGIN_PAGE_URL,
@@ -12,7 +12,9 @@ import { push } from "connected-react-router";
 import { ThunkDispatch } from "redux-thunk";
 import { AppActions } from "../../types/actions/appActions";
 import { bindActionCreators } from "redux";
-import { userLogout } from "../../store/user/userThunks";
+import { userLogout } from "../../thunks/userThunks";
+import users from "../../stubs/users.json";
+import { Product } from "../../types/products/Product";
 
 type PushType = typeof push;
 
@@ -23,14 +25,22 @@ const loginLogoutButton = (
 ): React.ReactElement => {
   if (user) {
     return (
-      <Button onClick={userLogout} variant="outline-light">
+      <Button
+        onClick={userLogout}
+        variant="outline-light"
+        className="text-center"
+      >
         Logout
       </Button>
     );
   }
 
   return (
-    <Button onClick={() => push(LOGIN_PAGE_URL)} variant="outline-light">
+    <Button
+      onClick={() => push(LOGIN_PAGE_URL)}
+      variant="outline-light"
+      className="text-center"
+    >
       Login
     </Button>
   );
@@ -54,7 +64,17 @@ const privateNavBar = (
   if (user) {
     return (
       <Nav className="ml-auto">
-        <Nav.Link onClick={() => push(USER_DETAILS_URL)}>My details</Nav.Link>
+        <Button
+          onClick={() => push(USER_DETAILS_URL)}
+          className="mr-3 border rounded p-auto"
+          variant="outline-light"
+        >
+          <Image
+            src="https://pngimg.com/uploads/shopping_cart/shopping_cart_PNG17.png"
+            height="25"
+            width="25"
+          />
+        </Button>
         {loginLogoutElement(user, push, userLogout)}
       </Nav>
     );
