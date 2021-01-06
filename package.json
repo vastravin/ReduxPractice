@@ -16,7 +16,7 @@
     "@types/redux-actions": "^2.6.1",
     "@types/redux-devtools-extension": "^2.13.2",
     "@types/yup": "^0.26.33",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "bootstrap-4": "^4.0.0",
     "connected-react-router": "^6.8.0",
